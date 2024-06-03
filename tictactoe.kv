@@ -1,0 +1,42 @@
+BoxLayout:
+    orientation: "vertical"
+    spacing: 10
+    padding: 10
+
+    GridLayout:
+        id: game_board
+        cols: 3
+        rows: 3
+        spacing: 5
+
+        Button:
+            on_press: app.on_button_press(self)
+        Button:
+            on_press: app.on_button_press(self)
+        Button:
+            on_press: app.on_button_press(self)
+        Button:
+            on_press: app.on_button_press(self)
+        Button:
+            on_press: app.on_button_press(self)
+        Button:
+            on_press: app.on_button_press(self)
+        Button:
+            on_press: app.on_button_press(self)
+        Button:
+            on_press: app.on_button_press(self)
+        Button:
+            on_press: app.on_button_press(self)
+
+    Label:
+        id: winner_label
+        text: ""
+        font_size: 24
+        size_hint_y: None
+        height: '48dp'
+
+    Button:
+        text: "Reset"
+        size_hint_y: None
+        height: '48dp'
+        on_press: app.reset_game()
